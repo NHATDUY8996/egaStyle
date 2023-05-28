@@ -1,0 +1,2685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="<?php echo $dm; ?>" />
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- link carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!-- LINK GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <link rel="stylesheet" href="./public/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./public/owlcarousel/owl.theme.default.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css?version=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- js carousel -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="./public/js/jquery.js"></script>
+    <!-- <script src="./public/js/script.js"></script> -->
+    <script type="text/javascript" src="public/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./public/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>document</title>
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header row" style="background-color: var(--color-primary4);">
+        <div class="header-top text-center pRl w100">
+            <div class="p6">
+                <a href="/" class="cwhite d-flex pRl">CHÀO HÈ SÔI NỔI - MỎI TAY SĂN QUÀ - ƯU ĐÃI X3</a>
+                <button class="pAs"><i class="bi bi-x-lg closehd"></i></button>
+            </div>
+        </div>
+        <div class="sticky-top" style="background-color: var(--color-white); padding: 10px 0;">
+            <div class="p6 d-flex align-items-center h100">
+                <div class="navmb col-sm-2 col-2">
+                    <input type="checkbox" id="navmb__input" class="navmb__input">
+                    <label for="navmb__input" class="overlaynavmb"></label>
+                    <label for="navmb__input" class="navmb-icon" style="font-size: 26px;">
+                        <i class="bi bi-list"></i>
+                    </label>
+                    <div class="navmbBar">
+                        <div class="navmbBar__top d-flex" style="background-color: var(--color-primary4);">
+                            <div class="navmbBar__icon"><i class="bi bi-person"></i></div>
+                            <div class="navmbBar__text ms-4">
+                                <span>Tài khoản</span><br>
+                                <span>Đăng nhập</span>
+                            </div>
+                        </div>
+                        <div class="navmbBar__mid">
+                            <ul>
+                                <li class="lv1"><a href="index.html">Trang chủ</a></li>
+                                <li class="lv1"><a href="">Sản phẩm<i class="bi bi-chevron-right"></i></a></li>
+                                <li class="lv1"><a href="">Chương trình khuyến mãi
+                                        <img src="./img/background/menu_icon_3.webp" alt="" style="max-height: 22px;">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </a></li>
+                                <li class="lv1"><a href="">Đơn hàng</a></li>
+                                <li class="lv1"><a href="">Hệ thống cửa hàng</a></li>
+                                <li class="lv1"><a href="">Giới thiệu</a></li>
+                                <li class="lv1"><a href="">Tin tức</a></li>
+                                <li class="lv1"><a href="">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="navmbbar__bottom d-flex align-items-center pAs">
+                            <a href=""><span>Gọi điện</span><i class="bi bi-telephone-fill"></i></a>
+                            <a href=""><span>Nhắn tin</span><i class="bi bi-messenger"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo h100 col-lg-2 col-sm-8 col-8 d-flex align-items-center">
+                    <a href="/">
+                        <img class="img-fluid" src="./img/background/logo.webp" alt=""
+                            style="object-fit: cover; width: 100%; height: 50px;">
+                    </a>
+                </div>
+                <div class="navpc col-lg-9 col-sm-8 col-2 navigation--horizontal align-items-center pRl">
+                    <div class="navigation-wrapper navigation-horizontal-wrapper">
+                        <ul class="navigation">
+                            <li class="lv1">
+                                <a href="index.html">Trang chủ</a>
+                            </li>
+                            <li class="lv1 hv1">
+                                <a href="product.html">Sản phẩm<i class="bi bi-chevron-down ms-4"></i></a>
+                            </li>
+                            <li class="lv1 pRl hv2">
+                                <a href="sale-off.html">
+                                    <img src="./img/background/menu_icon_3.webp" alt=""
+                                        style="height: 100%; width: 20px; object-fit: cover;">
+                                    Chương trình khuyến mãi<i class="bi bi-chevron-down ms-4"></i></a>
+
+                            </li>
+                            <li class="lv1">
+                                <a href="order.html">Đơn hàng</a>
+                            </li>
+                            <li class="lv1">
+                                <a href="chain-stores.html">Hệ thống cửa hàng</a>
+                            </li>
+                            <li class="lv1">
+                                <a href="intro.html">Giới thiệu</a>
+                            </li>
+                            <li class="lv1">
+                                <a href="blog.html">Tin tức</a>
+                            </li>
+                            <li class="lv1">
+                                <a href="contact.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" navigation-arrows ms-3 d-flex align-items-center">
+                        <i class="fas fa-chevron-left prev p-3"></i>
+                        <i class="fas fa-chevron-right next p-3"></i>
+                    </div>
+                    <div class="dropmenu pAs">
+                        <ul>
+                            <li><a href="">Landing Page - Flash Sale</a></li>
+                            <li><a href="">Landing Page - Black Friday</a></li>
+                            <li><a href="">Landing Page - Xmas</a></li>
+                            <li><a href="">Landing Page - FnB</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropmenusale pF">
+                        <div class="p6">
+                            <div class="col-lg-3">
+                                <h3 style="font-weight: 500; padding-left: 2px;">Bộ sưu tập</h3>
+                                <ul>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                    <li><a href="">Bộ sưu tập mùa hè</a></li>
+                                    <li><a href="">Bộ sưu tập mùa thu</a></li>
+                                    <li><a href="">Bộ sưu tập thu đông</a></li>
+                                    <li><a href="">Giáng sinh</a></li>
+                                    <li><a href="">Bộ sưu tập áo cưới</a></li>
+                                    <li><a href="">Bộ sưu tập outfits</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3">
+                                <h3 style="font-weight: 500; padding-left: 2px;">Mặc theo dịp</h3>
+                                <ul>
+                                    <li><a href="">Đi du lịch</a></li>
+                                    <li><a href="">Đi làm</a></li>
+                                    <li><a href="">Đi event</a></li>
+                                    <li><a href="">Đi tiệc</a></li>
+                                    <li><a href="">Đi Halloween</a></li>
+                                    <li><a href="">Lễ tình nhân</a></li>
+                                    <li><a href="">Lễ Quốc Tế Thiếu Nhi</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3">
+                                <h3 style="font-weight: 500; padding-left: 2px;">Bộ sưu tập</h3>
+                                <ul>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3">
+                                <h3 style="font-weight: 500; padding-left: 2px;">Bộ sưu tập</h3>
+                                <ul>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-icon col-lg-1 col-sm-2 col-2 d-flex justify-content-between align-items-center">
+                    <div class="search pRl">
+                        <input type="checkbox" class="inputSearch" id="inputSearch" style="display: none;">
+                        <label for="inputSearch" class="overlaysearch"></label>
+                        <label class="iconsearch" for="inputSearch" style="font-size: 26px; cursor: pointer;">
+                            <i class="bi bi-search"></i>
+                        </label>
+                        <div class="searchbar pF d-flex align-items-center justify-content-center">
+                            <div class=" col-lg-6 col-sm-6 col-10 pRl">
+                                <div class="col-lg-12 col-sm-12 col-12">
+                                    <input type="search" class="searchbar__input pRl " id="searchbar__input"
+                                        placeholder="Tìm theo tên sản phẩm...">
+
+                                </div>
+                                <label for="searchbar__input " class="pAs searchbar__label"><i
+                                        class="bi bi-search"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user pRl">
+                        <label style="font-size: 26px; cursor: pointer;">
+                            <i class="bi bi-person"></i>
+                        </label>
+                        <div class="user__hover pAs">
+                            <span>Đăng nhập</span><br>
+                            <span>Đăng ký</span>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <label style="font-size: 26px; cursor: pointer;">
+                            <i class=" bi bi-bag pRl">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    0
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </i>
+                        </label>
+                        <div class="cart__hover pAs">
+                            <span>không có sản phẩm nào</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+
+    <!-- banner -->
+    <div class="row">
+        <div class="owl-carousel owl-theme bannercarousel">
+            <div class="item banner1">
+                <img src="./img/banner/slider_1.webp" alt="">
+            </div>
+            <div class="item banner2">
+                <img src="./img/banner/slider_2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- banner -->
+    <!-- policies -->
+    <div class="row">
+        <div class="p6 poli" style="">
+            <div class="col-6 col-lg-3 col-sm-6 policies">
+                <div class="policies__img">
+                    <img src="./img/icon/policies_icon_1.png" alt="" style="max-width: 100%;">
+                </div>
+                <div class="policies__body">
+                    <p>Miễn phí vận chuyển</p>
+                    <span>Nhận hàng trong vòng 3 ngày</span>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 col-sm-6 policies">
+                <div class="policies__img">
+                    <img src="./img/icon/policies_icon_2.png" alt="" style="max-width: 100%;">
+                </div>
+                <div class="policies__body">
+                    <p>Quà tặng hấp dẫn</p>
+                    <span>Nhiều ưu đãi khuyến mãi hot</span>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 col-sm-6 policies">
+                <div class="policies__img">
+                    <img src="./img/icon/policies_icon_3.png" alt="" style="max-width: 100%;">
+                </div>
+                <div class="policies__body">
+                    <p>Bảo đảm chất lượng</p>
+                    <span>Sản phẩm đã dược kiểm định</span>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 col-sm-6 policies">
+                <div class="policies__img">
+                    <img src="./img/icon/policies_icon_4.png" alt="" style="max-width: 100%;">
+                </div>
+                <div class="policies__body">
+                    <p>Hotline: <a href="" style="color: var(--color-primary5);">19006750</a></p>
+                    <span>Dịch vụ hỗ trợ bạn 24/7</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- policies -->
+
+    <!-- season__coll -->
+    <div class="row">
+        <div class="p6 text-center">
+            <h1 style="margin-bottom: 100px;">Thời trang EGA</h1>
+            <div class="owl-carousel owl-theme season__collcarousel">
+                <div class="item">
+                    <a href="" class="ss__link">
+                        <div class="ss__img">
+                            <img src="./img/season/season_coll_1_img.png" alt="">
+                        </div>
+                        <div class="ss__info">
+                            <p>Đầm</p>
+                            <span>14 sản phẩm</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="" class="ss__link">
+                        <div class="ss__img">
+                            <img src="./img/season/season_coll_2_img.png" alt="">
+                        </div>
+                        <div class="ss__info">
+                            <p>Vest - Blazer</p>
+                            <span>5 sản phẩm</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="" class="ss__link">
+                        <div class="ss__img">
+                            <img src="./img/season/season_coll_3_img.png" alt="">
+                        </div>
+                        <div class="ss__info">
+                            <p>Đồ thể thao</p>
+                            <span>10 sản phẩm</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="" class="ss__link">
+                        <div class="ss__img">
+                            <img src="./img/season/season_coll_4_img.png" alt="">
+                        </div>
+                        <div class="ss__info">
+                            <p>Đồ bơi</p>
+                            <span>10 sản phẩm</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="" class="ss__link">
+                        <div class="ss__img">
+                            <img src="./img/season/season_coll_5_img.png" alt="">
+                        </div>
+                        <div class="ss__info">
+                            <p>Dồ ngủ</p>
+                            <span>9 sản phẩm</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="" class="ss__link">
+                        <div class="ss__img">
+                            <img src="./img/season/season_coll_6_img.png" alt="">
+                        </div>
+                        <div class="ss__info">
+                            <p>Áo sơ mi</p>
+                            <span>5 sản phẩm</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- season__coll -->
+    <!-- coupon -->
+    <div class="row">
+        <div class="p6">
+            <div class="coupon__list">
+                <div class="col-lg-3 col-sm-6 col-10">
+                    <div class="coupon__item">
+                        <div class="coupon__img">
+                            <img src="./img/coupon/coupon_1_img.png" alt="">
+                        </div>
+                        <div class="coupon__info">
+                            <div class="coupon__info-top">
+                                <h3>Nhập mã: Ega10</h3>
+                                <p>Mã giảm 10% cho đơn hàng tối thiểu 2tr</p>
+                            </div>
+                            <div class="coupon__info-bottom">
+                                <button>Sao chép</button>
+                                <a href="">Điều kiện</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-10">
+                    <div class="coupon__item">
+                        <div class="coupon__img">
+                            <img src="./img/coupon/coupon_1_img.png" alt="">
+                        </div>
+                        <div class="coupon__info">
+                            <div class="coupon__info-top">
+                                <h3>Nhập mã: Ega10</h3>
+                                <p>Mã giảm 10% cho đơn hàng tối thiểu 2tr</p>
+                            </div>
+                            <div class="coupon__info-bottom">
+                                <button>Sao chép</button>
+                                <a href="">Điều kiện</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-10">
+                    <div class="coupon__item">
+                        <div class="coupon__img">
+                            <img src="./img/coupon/coupon_1_img.png" alt="">
+                        </div>
+                        <div class="coupon__info">
+                            <div class="coupon__info-top">
+                                <h3>Nhập mã: Ega10</h3>
+                                <p>Mã giảm 10% cho đơn hàng tối thiểu 2tr</p>
+                            </div>
+                            <div class="coupon__info-bottom">
+                                <button>Sao chép</button>
+                                <a href="">Điều kiện</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-10">
+                    <div class="coupon__item">
+                        <div class="coupon__img">
+                            <img src="./img/coupon/coupon_1_img.png" alt="">
+                        </div>
+                        <div class="coupon__info">
+                            <div class="coupon__info-top">
+                                <h3>Nhập mã: Ega10</h3>
+                                <p>Mã giảm 10% cho đơn hàng tối thiểu 2tr</p>
+                            </div>
+                            <div class="coupon__info-bottom">
+                                <button>Sao chép</button>
+                                <a href="">Điều kiện</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- coupon -->
+    <!-- flash-sale -->
+    <div class="row">
+        <div class="p6">
+            <div class="flash-sale">
+                <div class="flash-sale-title d-flex align-items-center">
+                    <h1 style="margin: 0 12px;">Giảm sốc 50%</h1>
+                    <img src="./img/icon/flashsale-hot.png" alt="" style="max-height: 55px; width: 33px; height: 15px;">
+                </div>
+                <div class="flash-sale-time" style="display: flex; align-items: center;">
+                    <span class="flash-sale-time-text" style="color: var(--color-primary4); font-size: 16px;">Kết thúc
+                        sau</span>
+                    <ul>
+                        <li class="day"><span id="days"></span>days</li>
+                        <li><span id="hours"></span><span class="text cwhite">Giờ</span></li>
+                        <p class="iconfl">:</p>
+                        <li><span id="minutes"></span><span class="text cwhite">Phút</span></li>
+                        <p class="iconfl">:</p>
+                        <li><span id="seconds"></span><span class="text cwhite">Giây</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- flash-sale -->
+    <!-- product -->
+    <div class="row">
+        <div class="p6">
+            <ul class="nav nav-tabs tabproduct">
+                <li class="active"><a data-toggle="tab" href="#product__tab1">Hàng hiệu -50%</a></li>
+                <li><a data-toggle="tab" href="#product__tab2">Năng động ngày hè</a></li>
+                <li><a data-toggle="tab" href="#product__tab3">Chào biển nắng mới</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="product__tab1" class="tab-pane fade in active">
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img id="img1" src="./img/product/product1-1.jpg" alt="" class="img1">
+                                <img src="./img/overlay/frame_1.png" alt="" class="pAs imgoverlay">
+                                <img src="./img/product/product1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span><img src="./img/icon/fire-icon.svg" alt=""> Đang cháy hàng</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product2.jpg" alt="" class="img1">
+                                <img src="./img/product/product2-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product3.jpg" alt="" class="img1">
+                                <img src="./img/overlay/frame_2.png" alt="" class="pAs imgoverlay">
+                                <img src="./img/product/product3-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Đã bán được <strong
+                                        style="color: var(--color-primary5); font-weight: 800;">345</strong> sản
+                                    phẩm</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product4.jpg" alt="" class="img1">
+                                <img src="./img/product/product4.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product5.jpg" alt="" class="img1">
+                                <img src="./img/product/product5-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Hết hàng</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="product__tab2" class="tab-pane fade in">
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product2.jpg" alt="" class="img1">
+                                <img src="./img/product/product2-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product2.jpg" alt="" class="img1">
+                                <img src="./img/product/product2-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product2.jpg" alt="" class="img1">
+                                <img src="./img/product/product2-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product2.jpg" alt="" class="img1">
+                                <img src="./img/product/product2-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product2.jpg" alt="" class="img1">
+                                <img src="./img/product/product2-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="product__tab3" class="tab-pane fade in">
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product3.jpg" alt="" class="img1">
+                                <img src="./img/product/product3-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product3.jpg" alt="" class="img1">
+                                <img src="./img/product/product3-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product3.jpg" alt="" class="img1">
+                                <img src="./img/product/product3-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product3.jpg" alt="" class="img1">
+                                <img src="./img/product/product3-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product3.jpg" alt="" class="img1">
+                                <img src="./img/product/product3-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 100%; text-align: center;">
+                <button class="more">Xem tất cả<i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- product -->
+    <!-- lookbook -->
+    <div class="row">
+        <div class="p6 text-center">
+            <h1 class="mb-5">Set đồ cho bạn</h1>
+            <div class="lookbook__list mt-5">
+                <div class="lookbook__item col-lg-4 col-sm-6 col-12">
+                    <div class="lookbook__img pRl">
+                        <img src="./img/lookbook/lookbook_1_image.jpg" alt="">
+                        <div class="pAs lookbook__icon1 lookbook__icon">
+                            <button type="button" class="lookbook__btn lookbook__btn1 pAs"
+                                onclick="changeMenuIcon(this)">
+                                <div class="btn1"></div>
+                                <div class="btn2"></div>
+                            </button>
+                            <div class="lookbook__icon-info lookbook__icon-info1 pAs">
+                                <a href="">
+                                    <div class="icon-info-img">
+                                        <img src="./img/lookbook/lookbook_1.jpg" alt="">
+                                    </div>
+                                    <div class="icon-info-body">
+                                        <p>Áo bra legging sport</p>
+                                        <span>765.000₫</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn-wave"></div>
+                        </div>
+                        <div class="pAs lookbook__icon2 lookbook__icon">
+                            <button type="button" class="lookbook__btn lookbook__btn2 pAs"
+                                onclick="changeMenuIcon2(this)">
+                                <div class="btn1"></div>
+                                <div class="btn2"></div>
+                            </button>
+                            <div class="lookbook__icon-info lookbook__icon-info2 pAs">
+                                <a href="">
+                                    <div class="icon-info-img">
+                                        <img src="./img/lookbook/lookbook_1-1.jpg" alt="">
+                                    </div>
+                                    <div class="icon-info-body">
+                                        <p>Quần legging Sport</p>
+                                        <span>990.000₫</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn-wave"></div>
+                        </div>
+                        <div class="pAs lookbook__icon3 lookbook__icon">
+                            <button type="button" class="lookbook__btn lookbook__btn3 pAs"
+                                onclick="changeMenuIcon3(this)">
+                                <div class="btn1"></div>
+                                <div class="btn2"></div>
+                            </button>
+                            <div class="lookbook__icon-info lookbook__icon-info3 pAs">
+                                <a href="">
+                                    <div class="icon-info-img">
+                                        <img src="./img/lookbook/lookbook_1-2.jpg" alt="">
+                                    </div>
+                                    <div class="icon-info-body">
+                                        <p>Giày MLB Chunky New York</p>
+                                        <span>1.500.000₫</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn-wave"></div>
+                        </div>
+                    </div>
+                    <div class="lookbook__body">
+                        <h1>Set đồ tập Yoga Xuân Hè 2022</h1>
+                        <a href="" class="lookbook__link">Xem Chi tiết</a>
+                    </div>
+                </div>
+                <div class="lookbook__item lookbook__item2 col-lg-4 col-sm-6 col-12">
+                    <div class="lookbook__img pRl">
+                        <img src="./img/lookbook/lookbook_2_image.jpg" alt="">
+                        <div class="pAs lookbook__icon1 lookbook__icon">
+                            <button type="button" class="lookbook__btn lookbook__btn1 pAs"
+                                onclick="changeMenuIcon(this)">
+                                <div class="btn1"></div>
+                                <div class="btn2"></div>
+                            </button>
+                            <div class="lookbook__icon-info lookbook__icon-info1 pAs">
+                                <a href="">
+                                    <div class="icon-info-img">
+                                        <img src="./img/lookbook/lookbook_1.jpg" alt="">
+                                    </div>
+                                    <div class="icon-info-body">
+                                        <p>Áo bra legging sport</p>
+                                        <span>765.000₫</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn-wave"></div>
+                        </div>
+                        <div class="pAs lookbook__icon2 lookbook__icon">
+                            <button type="button" class="lookbook__btn lookbook__btn2 pAs"
+                                onclick="changeMenuIcon2(this)">
+                                <div class="btn1"></div>
+                                <div class="btn2"></div>
+                            </button>
+                            <div class="lookbook__icon-info lookbook__icon-info2 pAs">
+                                <a href="">
+                                    <div class="icon-info-img">
+                                        <img src="./img/lookbook/lookbook_1-1.jpg" alt="">
+                                    </div>
+                                    <div class="icon-info-body">
+                                        <p>Quần legging Sport</p>
+                                        <span>990.000₫</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn-wave"></div>
+                        </div>
+                        <div class="pAs lookbook__icon3 lookbook__icon">
+                            <button type="button" class="lookbook__btn lookbook__btn3 pAs"
+                                onclick="changeMenuIcon3(this)">
+                                <div class="btn1"></div>
+                                <div class="btn2"></div>
+                            </button>
+                            <div class="lookbook__icon-info lookbook__icon-info3 pAs">
+                                <a href="">
+                                    <div class="icon-info-img">
+                                        <img src="./img/lookbook/lookbook_1-2.jpg" alt="">
+                                    </div>
+                                    <div class="icon-info-body">
+                                        <p>Giày MLB Chunky New York</p>
+                                        <span>1.500.000₫</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn-wave"></div>
+                        </div>
+                    </div>
+                    <div class="lookbook__body">
+                        <h1>Set đồ tập Yoga Xuân Hè 2022</h1>
+                        <a href="" class="lookbook__link">Xem Chi tiết</a>
+                    </div>
+                </div>
+                <div class="lookbook__item lookbook__item3 col-lg-4 col-sm-6 col-12">
+                    <div class="lookbook__img pRl">
+                        <img src="./img/lookbook/lookbook_3_image.jpg" alt="">
+                        <div class="pAs lookbook__icon1 lookbook__icon">
+                            <button type="button" class="lookbook__btn lookbook__btn1 pAs"
+                                onclick="changeMenuIcon(this)">
+                                <div class="btn1"></div>
+                                <div class="btn2"></div>
+                            </button>
+                            <div class="lookbook__icon-info lookbook__icon-info1 pAs">
+                                <a href="">
+                                    <div class="icon-info-img">
+                                        <img src="./img/lookbook/lookbook_1.jpg" alt="">
+                                    </div>
+                                    <div class="icon-info-body">
+                                        <p>Áo bra legging sport</p>
+                                        <span>765.000₫</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn-wave"></div>
+                        </div>
+                        <div class="pAs lookbook__icon2 lookbook__icon">
+                            <button type="button" class="lookbook__btn lookbook__btn2 pAs"
+                                onclick="changeMenuIcon2(this)">
+                                <div class="btn1"></div>
+                                <div class="btn2"></div>
+                            </button>
+                            <div class="lookbook__icon-info lookbook__icon-info2 pAs">
+                                <a href="">
+                                    <div class="icon-info-img">
+                                        <img src="./img/lookbook/lookbook_1-1.jpg" alt="">
+                                    </div>
+                                    <div class="icon-info-body">
+                                        <p>Quần legging Sport</p>
+                                        <span>990.000₫</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn-wave"></div>
+                        </div>
+                        <div class="pAs lookbook__icon3 lookbook__icon">
+                            <button type="button" class="lookbook__btn lookbook__btn3 pAs"
+                                onclick="changeMenuIcon3(this)">
+                                <div class="btn1"></div>
+                                <div class="btn2"></div>
+                            </button>
+                            <div class="lookbook__icon-info lookbook__icon-info3 pAs">
+                                <a href="">
+                                    <div class="icon-info-img">
+                                        <img src="./img/lookbook/lookbook_1-2.jpg" alt="">
+                                    </div>
+                                    <div class="icon-info-body">
+                                        <p>Giày MLB Chunky New York</p>
+                                        <span>1.500.000₫</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn-wave"></div>
+                        </div>
+                    </div>
+                    <div class="lookbook__body">
+                        <h1>Set đồ tập Yoga Xuân Hè 2022</h1>
+                        <a href="" class="lookbook__link">Xem Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- lookbook -->
+    <!-- section -->
+    <div class="row">
+        <div class="p6" style="margin: 50px 0;">
+            <div class="section-banner col-12 col-lg-12 col-sm-12">
+                <img src="./img/banner/slider_2.jpg" alt="" style=" width: 100%; object-fit: cover;">
+            </div>
+        </div>
+    </div>
+    <!-- section -->
+    <!-- product -->
+    <div class="row">
+        <div class="p6">
+            <div class="text-center">
+                <h1>Bộ sưu tập xuân hè</h1>
+            </div>
+            <ul class="nav nav-tabs tabcollection justify-content-center">
+                <li class="active"><a data-toggle="tab" href="#collection__tab1">EGA New</a></li>
+                <li><a data-toggle="tab" href="#collection__tab2">EGA Season</a></li>
+                <li><a data-toggle="tab" href="#collection__tab3">Top Fashion</a></li>
+            </ul>
+            <div class="tab-content collection">
+                <div id="collection__tab1" class="tab-pane fade in active">
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img id="img1" src="./img/product/product1-1.jpg" alt="" class="img1">
+                                <img src="./img/overlay/frame_3.png" alt="" class="pAs imgoverlay">
+                                <img src="./img/product/product1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span><img src="./img/icon/fire-icon.svg" alt=""> Đang cháy hàng</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product2.jpg" alt="" class="img1">
+                                <img src="./img/overlay/frame_1.png" alt="" class="pAs imgoverlay">
+                                <img src="./img/product/product2-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product3.jpg" alt="" class="img1">
+                                <img src="./img/overlay/frame_2.png" alt="" class="pAs imgoverlay">
+                                <img src="./img/product/product3-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Đã bán được <strong
+                                        style="color: var(--color-primary5); font-weight: 800;">345</strong> sản
+                                    phẩm</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product4.jpg" alt="" class="img1">
+                                <img src="./img/product/product4.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product5.jpg" alt="" class="img1">
+                                <img src="./img/product/product5-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Hết hàng</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="collection__tab2" class="tab-pane fade in">
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product2.jpg" alt="" class="img1">
+                                <img src="./img/product/product2-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product2.jpg" alt="" class="img1">
+                                <img src="./img/product/product2-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product2.jpg" alt="" class="img1">
+                                <img src="./img/product/product2-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product2.jpg" alt="" class="img1">
+                                <img src="./img/product/product2-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product2.jpg" alt="" class="img1">
+                                <img src="./img/product/product2-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="collection__tab3" class="tab-pane fade in">
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product3.jpg" alt="" class="img1">
+                                <img src="./img/product/product3-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product3.jpg" alt="" class="img1">
+                                <img src="./img/product/product3-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product3.jpg" alt="" class="img1">
+                                <img src="./img/product/product3-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product3.jpg" alt="" class="img1">
+                                <img src="./img/product/product3-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product3.jpg" alt="" class="img1">
+                                <img src="./img/product/product3-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 100%; text-align: center;">
+                <button class="more">Xem tất cả<i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- product -->
+    <!-- section -->
+    <div class="row">
+        <div class="p6" style="margin: 50px 0;">
+            <div class="section-banner col-12 col-lg-12 col-sm-12 pRl">
+                <img src="./img/video/section_video_bg.jpg" alt="" style=" width: 100%; object-fit: cover;">
+                <div class="video-play-button-wrap">
+                    <div class="video-play-button">
+                        <i class="bi bi-caret-right-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section -->
+    <!-- product -->
+    <div class="row">
+        <div class="p6">
+            <div class="text-center product3 d-flex justify-content-center align-items-center">
+                <h1 class="me-5" style="color: #9c9c9c;">Bạn đang xem</h1>
+                <h1>Sản phẩm hot <i class="bi bi-chevron-down"></i></h1>
+            </div>
+
+            <div class="tab-content collection">
+                <div id="collection__tab1" class="tab-pane fade in active">
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img id="img1" src="./img/product/product1-1.jpg" alt="" class="img1">
+                                <img src="./img/overlay/frame_3.png" alt="" class="pAs imgoverlay">
+                                <img src="./img/product/product1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span><img src="./img/icon/fire-icon.svg" alt=""> Đang cháy hàng</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product2.jpg" alt="" class="img1">
+                                <img src="./img/overlay/frame_1.png" alt="" class="pAs imgoverlay">
+                                <img src="./img/product/product2-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product3.jpg" alt="" class="img1">
+                                <img src="./img/overlay/frame_2.png" alt="" class="pAs imgoverlay">
+                                <img src="./img/product/product3-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Đã bán được <strong
+                                        style="color: var(--color-primary5); font-weight: 800;">345</strong> sản
+                                    phẩm</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product4.jpg" alt="" class="img1">
+                                <img src="./img/product/product4.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Vừa mở bán</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="15"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item col-6 col-lg-4 col-sm-6">
+                        <div class="product__img pRl">
+                            <a href="">
+                                <img src="./img/product/product5.jpg" alt="" class="img1">
+                                <img src="./img/product/product5-1.jpg" alt="" class="pAs imghover">
+                                <div class="product__iconhover pAs">
+                                    <a href="" class="iconhover1 pRl">
+                                        <img src="./img/icon/icon-options.png" alt="">
+                                        <div class="iconhover-name pAs">Tùy chọn</div>
+                                    </a>
+                                    <a href="" class="iconhover2">
+                                        <i class="bi bi-eye-fill"></i>
+                                        <div class="iconhover-name pAs">Xem nhanh</div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info-top">
+                                <span class="text">COTTON ON BODY</span>
+                                <a href="" class="product-name">Set thể thao Shelby Ecomove</a>
+                                <span class="prince" style="color: var(--color-primary3);">1.630.000₫</span><br>
+                                <span class="prince-old">2.105.000₫ <label>-23%</label></span>
+                                <div class="product__img-icon">
+                                    <div class="imgIcon"><img src="./img/product/icon1.jpg" alt=""></div>
+                                    <div class="imgIcon"><img src="./img/product/icon2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="product__info-bottom">
+                                <span>Hết hàng</span>
+                                <div class="product__progress" aria-label="Basic example" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="product__progress-bar" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 100%; text-align: center;">
+                <button class="more">Xem tất cả<i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- product -->
+    <!-- user -->
+    <div class="row" style=" background-color: var(--color-white1);">
+        <div class="p6">
+            <h1 class="text-center title">Khách hàng đã nói gì</h1>
+            <div class="owl-carousel owl-theme usercarousel">
+                <div class="item user__item">
+                    <div class="user__content">
+                        <div class="user__info col-lg-9 col-sm-9 col-9">
+                            <p class="user__name">Bích Chi</p>
+                            <div class="star d-flex">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <p>Sản phẩm đẹp, chất liệu mát, mặc vừa người, nhân viên phục vụ rất tận tình và chu đáo,
+                                quá
+                                tốt</p>
+                        </div>
+                        <div class="user__img col-lg-3 col-sm-3 col-3">
+                            <img src="./img/user/user1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="user__like">
+                        <div class="user__like-img">
+                            <img src="./img/user/icon1.webp" alt="">
+                        </div>
+                        <div class="pd-name text-left">Blazer K.Dress</div>
+                    </div>
+                </div>
+                <div class="item user__item">
+                    <div class="user__content">
+                        <div class="user__info col-lg-9 col-sm-9 col-9">
+                            <p class="user__name">Bích Chi</p>
+                            <div class="star d-flex">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <p>Sản phẩm đẹp, chất liệu mát, mặc vừa người, nhân viên phục vụ rất tận tình và chu đáo,
+                                quá
+                                tốt</p>
+                        </div>
+                        <div class="user__img col-lg-3 col-sm-3 col-3">
+                            <img src="./img/user/user2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="user__like">
+                        <div class="user__like-img">
+                            <img src="./img/user/icon2.webp" alt="">
+                        </div>
+                        <div class="pd-name text-left">Blazer K.Dress</div>
+                    </div>
+                </div>
+                <div class="item user__item">
+                    <div class="user__content">
+                        <div class="user__info col-lg-9 col-sm-9 col-9">
+                            <p class="user__name">Bích Chi</p>
+                            <div class="star d-flex">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>Sản phẩm đẹp, chất liệu mát, mặc vừa người, nhân viên phục vụ rất tận tình và chu đáo,
+                                quá
+                                tốt</p>
+                        </div>
+                        <div class="user__img col-lg-3 col-sm-3 col-3">
+                            <img src="./img/user/user3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="user__like">
+                        <div class="user__like-img">
+                            <img src="./img/user/icon3.webp" alt="">
+                        </div>
+                        <div class="pd-name text-left">Blazer K.Dress</div>
+                    </div>
+                </div>
+                <div class="item user__item">
+                    <div class="user__content">
+                        <div class="user__info col-lg-9 col-sm-9 col-9">
+                            <p class="user__name">Bích Chi</p>
+                            <div class="star d-flex">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>Sản phẩm đẹp, chất liệu mát, mặc vừa người, nhân viên phục vụ rất tận tình và chu đáo,
+                                quá
+                                tốt</p>
+                        </div>
+                        <div class="user__img col-lg-3 col-sm-3 col-3">
+                            <img src="./img/user/user3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="user__like">
+                        <div class="user__like-img">
+                            <img src="./img/user/icon3.webp" alt="">
+                        </div>
+                        <div class="pd-name text-left">Blazer K.Dress</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- user -->
+    <!-- section -->
+    <div class="row">
+        <div class="p6">
+            <div class="section2">
+                <div class="col-lg-6 col-12 col-sm-6 section2__img">
+                    <img src="./img/background/imgtext_2_img.webp" alt="">
+                </div>
+                <div class="col-lg-6 col-sm-6 col-12 season__content">
+                    <h3 class="imgtext-title">Xu hướng thời trang 2022</h3>
+                    <p class="imgtext-desc">Khoe eo! Mùa Hè mang đến lời mời gọi hãy để chiếc eo thon là tâm điểm phong
+                        cách. BST Miu Miu ngập tràn crop top với hơi hướng Y2K đầy sức sống. Versace cũng cho thấy làn
+                        da rám nắng tuyệt đẹp khi diện crop top mang dấu ấn thập niên 80. Và crop top còn được thấy ở
+                        khắp các BST thời trang mùa Xuân – Hè 2022 của Chanel, Salvatore Ferragamo, Givenchy, Lanvin,…
+                    </p>
+                    <a class="link" href="">Xem chi tiết<i class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section -->
+
+    <!-- insta -->
+    <div class="row">
+        <div class="p6">
+            <h1 class="text-center title" style="margin-bottom: 30px;">@ Follow Instagram</h1>
+            <div class="insta__list" style="margin-bottom: 30px;">
+                <div class="insta__item col-sm-6 col-6">
+                    <a href="">
+                        <img src="./img/inta/insta_1_img.webp" alt="">
+                        <button><i class="bi bi-instagram"></i></button>
+                    </a>
+                </div>
+                <div class="insta__item col-sm-6 col-6">
+                    <a href="">
+                        <img src="./img/inta/insta_2_img.webp" alt="">
+                        <button><i class="bi bi-instagram"></i></button>
+                    </a>
+                </div>
+                <div class="insta__item col-sm-6 col-6">
+                    <a href="">
+                        <img src="./img/inta/insta_3_img.webp" alt="">
+                        <button><i class="bi bi-instagram"></i></button>
+                    </a>
+                </div>
+                <div class="insta__item col-sm-6 col-6">
+                    <a href="">
+                        <img src="./img/inta/insta_4_img.webp" alt="">
+                        <button><i class="bi bi-instagram"></i></button>
+                    </a>
+                </div>
+                <div class="insta__item col-sm-6 col-6">
+                    <a href="">
+                        <img src="./img/inta/insta_5_img.webp" alt="">
+                        <button><i class="bi bi-instagram"></i></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- insta -->
+    <!-- brand -->
+    <div class="row">
+        <div class="p6">
+            <h1 class="text-center title" style="margin-bottom: 30px;">@ Follow Instagram</h1>
+            <div class="brand__list" style="margin-bottom: 30px;">
+                <div class="brand__item col-sm-6 col-6">
+                    <a href="">
+                        <img src="./img/brand/brand_1.webp" alt="">
+                    </a>
+                </div>
+                <div class="brand__item col-sm-6 col-6">
+                    <a href="">
+                        <img src="./img/brand/brand_2.webp" alt="">
+                    </a>
+                </div>
+                <div class="brand__item col-sm-6 col-6">
+                    <a href="">
+                        <img src="./img/brand/brand_3.webp" alt="">
+                    </a>
+                </div>
+                <div class="brand__item col-sm-6 col-6">
+                    <a href="">
+                        <img src="./img/brand/brand_4.webp" alt="">
+                    </a>
+                </div>
+                <div class="brand__item col-sm-6 col-6">
+                    <a href="">
+                        <img src="./img/brand/brand_5.webp" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- brand -->
+    <!-- blog -->
+    <div class="row">
+        <div class="p6">
+            <div class="blog-title">
+                <h1>Tin tức</h1>
+            </div>
+            <div class="blog">
+                <div class="blog__item col-12 col-lg-6 col-sm-6">
+                    <div class="blog__item-img">
+                        <img src="./img/blog/blogimg.webp" alt="">
+                    </div>
+                    <div class="blog__item-content">
+                        <a href="">Nghệ thuật tiết kiệm tiền hiệu quả từ những tín đồ sống tối giản</a>
+                    </div>
+                    <div class="media">
+                        <span><i class="bi bi-calendar-date-fill"></i>Thứ Sáu, 22/07/2022</span>
+                        <span><i class="bi bi-clock-fill"></i>2 phút đọc</span>
+                    </div>
+                    <span class="art-summary">Những mẹo sau có thể giúp bạn lập được kế hoạch quản lý tài chính chặt chẽ
+                        nhưng vẫn cảm thấy cuộc sống nhẹ nhàng, thoải...</span><br>
+                    <a href="" class="link">Đọc tiếp</a>
+                </div>
+                <div class="blog__list col-12 col-lg-6 col-sm-6">
+                    <div class="blog__list-item col-lg-12 col-sm-12 col-12">
+                        <div class="col-lg-4 col-4 col-sm-4 blog__list-img">
+                            <img src="./img/blog/blog1.webp" alt="">
+                        </div>
+                        <div class="col-lg-8 col-8 col-sm-8 blog__list-info">
+                            <a href="">Nghệ thuật tiết kiệm tiền hiệu quả từ những tín đồ sống tối giản</a>
+                            <span>Thứ Sáu, 22/07/2022</span>
+                            <p class="">Không những mang đến những hiệu quả đáng ngờ trong việc cải thiện làn da và vóc dáng, trà thảo...</p>
+                        </div>
+                    </div>
+                    <div class="blog__list-item col-lg-12 col-sm-12 col-12">
+                        <div class="col-lg-4 col-4 col-sm-4 blog__list-img">
+                            <img src="./img/blog/blog1.webp" alt="">
+                        </div>
+                        <div class="col-lg-8 col-8 col-sm-8 blog__list-info">
+                            <a href="">Nghệ thuật tiết kiệm tiền hiệu quả từ những tín đồ sống tối giản</a>
+                            <span>Thứ Sáu, 22/07/2022</span>
+                            <p class="">Không những mang đến những hiệu quả đáng ngờ trong việc cải thiện làn da và vóc dáng, trà thảo...</p>
+                        </div>
+                    </div>
+                    <div class="blog__list-item col-lg-12 col-sm-12 col-12">
+                        <div class="col-lg-4 col-4 col-sm-4 blog__list-img">
+                            <img src="./img/blog/blog1.webp" alt="">
+                        </div>
+                        <div class="col-lg-8 col-8 col-sm-8 blog__list-info">
+                            <a href="">Nghệ thuật tiết kiệm tiền hiệu quả từ những tín đồ sống tối giản</a>
+                            <span>Thứ Sáu, 22/07/2022</span>
+                            <p class="">Không những mang đến những hiệu quả đáng ngờ trong việc cải thiện làn da và vóc dáng, trà thảo...</p>
+                        </div>
+                    </div>
+                    <div class="blog__list-item col-lg-12 col-sm-12 col-12">
+                        <div class="col-lg-4 col-4 col-sm-4 blog__list-img">
+                            <img src="./img/blog/blog1.webp" alt="">
+                        </div>
+                        <div class="col-lg-8 col-8 col-sm-8 blog__list-info">
+                            <a href="">Nghệ thuật tiết kiệm tiền hiệu quả từ những tín đồ sống tối giản</a>
+                            <span>Thứ Sáu, 22/07/2022</span>
+                            <p class="">Không những mang đến những hiệu quả đáng ngờ trong việc cải thiện làn da và vóc dáng, trà thảo...</p>
+                        </div>
+                    </div>
+                    <div class="blog__list-item col-lg-12 col-sm-12 col-12">
+                        <div class="col-lg-4 col-4 col-sm-4 blog__list-img">
+                            <img src="./img/blog/blog1.webp" alt="">
+                        </div>
+                        <div class="col-lg-8 col-8 col-sm-8 blog__list-info">
+                            <a href="">Nghệ thuật tiết kiệm tiền hiệu quả từ những tín đồ sống tối giản</a>
+                            <span>Thứ Sáu, 22/07/2022</span>
+                            <p class="">Không những mang đến những hiệu quả đáng ngờ trong việc cải thiện làn da và vóc dáng, trà thảo...</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div style="width: 100%; text-align: center;">
+                <button class="more">Xem tất cả<i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- blog -->
+    <!-- footer -->
+    <div class="footer row">
+        <div class="footer__top" style="background-color: var(--color-input); color: var(--color-white);">
+            <div class="p6">
+                <div style="margin-top: 7em ; display: flex; flex-wrap: wrap;">
+                    <div class="col-lg-3 col-sm-12 col-12">
+                        <div class="logo-ft">
+                            <img src="./img/footer/logo-footer.webp" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <span class="ms-4">Địa chỉ: 70 Lu Gia, District 11, Ho Chi Minh City.</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-phone"></i>
+                                <span class="ms-4">Số điện thoại: 19006750</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-envelope"></i>
+                                <span class="ms-4">Email: support@sapo.vn</span>
+                            </li>
+                            <li>
+                                <span>© Bản quyền thuộc về EGANY | Cung cấp bởi Sapo</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 col-12">
+                        <h3>CHÍNH SÁCH</h3>
+                        <ul>
+                            <li>
+                                <a href="">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="">Hệ thống cửa hàng</a>
+                            </li>
+                            <li>
+                                <a href="">Câu hỏi thường gặp</a>
+                            </li>
+                            <li>
+                                <a href="">Gọi điện đặt hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 col-12">
+                        <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                        <ul>
+                            <li>
+                                <a href="">Thông tin liên hệ</a>
+                            </li>
+                            <li>
+                                <a href="">Chính sách giao hàng</a>
+                            </li>
+                            <li>
+                                <a href="">Chính sách đổi hàng</a>
+                            </li>
+                            <li>
+                                <a href="">Chính sách bán hàng</a>
+                            </li>
+                        </ul>
+                        <div style="margin-top: 100px;">
+                            <img src="./img/footer/footer_trustbadge.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 col-12">
+                        <h3>ĐĂNG KÝ NHẬN TIN</h3>
+                        <p>Bạn có muốn nhận khuyến mãi đặc biệt? Đăng ký ngay.</p>
+                        <div class="inputmail pRl">
+                            <input id="inputmail" type="email" placeholder="Nhập địa chỉ Email">
+                            <label for="inputmail">Đăng ký</label>
+                        </div>
+                        <ul class="social">
+                            <li>
+                                <img src="./img/footer/facebook.webp" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/footer/zalo.webp" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/footer/instagram.webp" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/footer/youtube.webp" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/footer/tiktok.webp" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom pF">
+            <div class="backtotop" onclick="topFunction()">
+                <button>
+                    <i class="bi bi-chevron-up"></i>
+                </button>
+            </div>
+            <div class="call">
+                <button style="background-color: var(--color-primary3);">
+                    <i class="bi bi-telephone-fill"></i>
+                </button>
+            </div>
+            <div class="call">
+                <button>
+                    <img src="./img/footer/addthis-zalo.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div id="ega-sale-pop" class="sales-pop salespop-close">
+            <div class="sale-pop-wrap">	
+                    <div class="sale-pop-img">
+                    <img src="./img/product/product1-1.jpg" class="img-fluid" loading="lazy" alt="undefined" width="80" height="80">
+                        </div>
+                    <div class="sale-pop-body">
+                    <div class="sale-pop-name">
+                    <a href="">Quần Petites Oren</a>
+                        </div>
+                    <span class="sale-pop-desc">Khách hàng Nguyễn Liễu Oanh tại Kiên Giang vừa mua sản phẩm cách đây 26 phút</span>
+                        </div>
+        </div>
+            <div class="sale-pop-close">
+                <i class="fa fa-times"></i>
+            </div>	
+        
+        </div>
+    </div>
+    <div id="ega-sale-pop" class="sales-pop hidden">
+        <div class="sale-pop-wrap">
+    
+        </div>
+        <div class="sale-pop-close">
+            <i class="fa fa-times"></i>
+        </div>	
+    
+    </div>
+    <script>
+        var salePopArr = [];
+        let timePerPop = 7000;
+        let timeDelay = 8000;
+        let salesPopDesc = `Khách hàng [name] tại [address] vừa mua sản phẩm cách đây [time]`;
+        let count = 0;
+        let fakerScript ="//bizweb.dktcdn.net/100/448/042/themes/895670/assets/faker.js?1683628159219"
+        let customerGender = undefined;
+            
+            salePopArr = [		{
+            "img_url": "//bizweb.dktcdn.net/thumb/small/100/448/042/products/load-4942e3a0ec9f407da75117ea1e2bcacf-49a1f764589a4e65ad8cbc9abc6335fb-917f40e443e54218a9fdedb2b1974323.jpg?v=1658372579000",
+            "pd_title": "Quần âu Lisboa",
+            "pd_url": "/quan-au-lisboa",
+        }, 			{
+            "img_url": "//bizweb.dktcdn.net/thumb/small/100/448/042/products/load-b94ba45a98fd47ccb5a6c31cc583d2ab-bf3f78fdf1ae496fa9fab935df3a6f37-a5ca024e707d4762aeea678a405e6b37.jpg?v=1658372582000",
+            "pd_title": "Set thun ngắn  Boucle Lounge Bike Short",
+            "pd_url": "/set-thun-ngan-boucle-lounge-bike-short",
+        }, 			{
+            "img_url": "//bizweb.dktcdn.net/thumb/small/100/448/042/products/load-bcf63fdec6eb4db48079acbf597598b2-1cc07e7f050940968fc11e9c62da8115-758e5beedc8a42bba660729e4e670d56.jpg?v=1658372582000",
+            "pd_title": "Set đồ ngủ CK Fade",
+            "pd_url": "/set-do-ngu-ck",
+        }, 			{
+            "img_url": "//bizweb.dktcdn.net/thumb/small/100/448/042/products/load-88f08786e2fb422298a6d2cb6e09904c-4e090c3b925c43b1a8834e0b3879a47b-5a7523e164844eeba958ea9d32e7d5de.jpg?v=1658372595000",
+            "pd_title": "Quần Petites Oren",
+            "pd_url": "/quan-petites-oren",
+        }, 			{
+            "img_url": "//bizweb.dktcdn.net/thumb/small/100/448/042/products/load-be0b3aa9024e445c9f0433db15ad34cf-e6daa6fd105b4e409b7b409c1a746bf6-0cbb3f13e27c47ee96c9e68841ec8746.jpg?v=1658372596000",
+            "pd_title": "Quần Madelyn",
+            "pd_url": "/quan-madelyn",
+        }, 			{
+            "img_url": "//bizweb.dktcdn.net/thumb/small/100/448/042/products/load-bb95a393a28148a99f25508b7909ac92-119624ec53ff4419bcce4a6e4e4a353d-dc0d2bccdc4a4f2aab758188d4433736.jpg?v=1658372596000",
+            "pd_title": "Quần Jordana",
+            "pd_url": "/quan-jordana",
+        }, 			{
+            "img_url": "//bizweb.dktcdn.net/thumb/small/100/448/042/products/load-9324800aceb543dd8e098c4fcb18c9c1-a510db114eeb4de097b6f7eb41ea987c-3300c51c61ee4590b438e9f32051b197.jpg?v=1658372598000",
+            "pd_title": "Áo sơ mi Ray Twill",
+            "pd_url": "/ao-so-mi-ray-twill",
+        }, 			{
+            "img_url": "//bizweb.dktcdn.net/thumb/small/100/448/042/products/load-4cd5e9fff55a490ea2499ef2103fa47f-0a92a2e094764e81aeffa2c0797ac1a8-5b9429d38e8e4965af7b145f2816f607.jpg?v=1658372600000",
+            "pd_title": "Quần Mason Panny",
+            "pd_url": "/quan-mason-panny",
+        }, 			{
+            "img_url": "//bizweb.dktcdn.net/thumb/small/100/448/042/products/upload-f256fc81a73e4fb09f88938719867a94-3c06860eb0304d97b2dbb1e27f103805.jpg?v=1658372602000",
+            "pd_title": "Váy East Maxi",
+            "pd_url": "/vay-easty-maxi",
+        }, 			{
+            "img_url": "//bizweb.dktcdn.net/thumb/small/100/448/042/products/load-443ce743d7904b2f97bf71e0447a460e-ae8ed03d96ab4866b60d1404e5a2484e-9e078084b65c4dc0908843db90e9de65.jpg?v=1658372603000",
+            "pd_title": "Đầm dạ hội Eva",
+            "pd_url": "/dam-da-hoi-eva",
+        }				]	
+    
+            function showSalePop() {		
+                if(!faker) return
+                $('#ega-sale-pop.salepop-show').removeClass('salepop-show').addClass('salespop-close');
+                let pdRanIndex = Math.floor(Math.random() * salePopArr.length),
+                    salePopProduct = salePopArr[pdRanIndex],
+                    randomMin = `${Math.floor(Math.random() * 59) + 1} phút`;
+                const name= `${faker.name.lastName(customerGender)} ${faker.name.firstName(customerGender)}`
+                const phone = `${faker.phone.phoneNumber().replace(' ')}`
+                const address = faker.random.arrayElement(faker.locales.vi.address.city_root)
+                const desc = salesPopDesc
+                .replace(`[name]`, name)
+                .replace(`[phone]`, `xxx${phone.substr(phone.length - 8)}`)
+                .replace(`[time]`, randomMin)
+                .replace('[address]', address)
+                const salesPopContent = `	
+                <div class="sale-pop-img">
+                <img src="${salePopProduct.img_url}" class="img-fluid" loading="lazy" alt="${salePopProduct.title}" width="80" height="80"/>
+                    </div>
+                <div class="sale-pop-body">
+                <div class="sale-pop-name">
+                <a href="${salePopProduct.pd_url}">${salePopProduct.pd_title}</a>
+                    </div>
+                <span class="sale-pop-desc">${desc}</span>
+                    </div>
+    `
+                $('.sale-pop-wrap').html(salesPopContent)
+                setTimeout(()=>{
+                    $('#ega-sale-pop').addClass('salepop-show').removeClass('salespop-close');
+                    setTimeout(()=>{
+                        $('#ega-sale-pop.salepop-show').removeClass('salepop-show').addClass('salespop-close');
+                        setTimeout(()=>{
+                            showSalePop()
+                        },timeDelay)
+                    },5000)
+                },3000)
+    
+    
+            }
+    
+    
+        function initSalesPop() {
+            if(!salePopArr.length) return;
+            setTimeout(()=>{
+            $.getScript(fakerScript).then(()=>{
+            if(faker){
+                    showSalePop()
+                }
+            })
+            
+            },timeDelay)
+            
+    
+    
+    
+        }
+    
+        $(document).ready(() => {
+            $('#ega-sale-pop').removeClass('hidden');
+                initSalesPop()
+                $(".sale-pop-close").click(function () {
+                    $("#ega-sale-pop").removeClass('salepop-show').removeClass('salespop-close');
+                })
+                $(".sale-pop-cta").click(function (e) {
+                    e.preventDefault();
+                    $(".sale-pop-regis").show();
+                })
+                $(".regis-close").click(function () {
+                    $(".sale-pop-regis").hide();
+                })
+        })
+    
+    
+    </script>
+    <!-- footer -->
+    <script src="public/js/script.js"></script>
+    <script>
+        // countdown
+(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "09/30/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="<?php echo $dm; ?>" />
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- link carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!-- LINK GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <link rel="stylesheet" href="./public/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./public/owlcarousel/owl.theme.default.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css?version=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- js carousel -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="./public/js/jquery.js"></script>
+    <!-- <script src="./public/js/script.js"></script> -->
+    <script type="text/javascript" src="public/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./public/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>document</title>
+
+</head>
+<style>
+    .breadcrumb a .text:hover {
+        color: var(--color-primary5) !important;
+    }
+
+.content p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.content ul{
+    margin-bottom: 30px;
+}
+.content li{
+    font-size: 20px;
+    padding-left: 50px;
+    cursor: default;
+    position: relative;
+}
+.content li::after{
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    left: 20px;
+    border-radius: 50%;
+    background-color: var(--color-black);
+}
+</style>
+
+<body>
+    <!-- header -->
+    <div class="header row" style="background-color: var(--color-primary4);">
+        <div class="header-top text-center pRl w100">
+            <div class="p6">
+                <a href="/" class="cwhite d-flex pRl">CHÀO HÈ SÔI NỔI - MỎI TAY SĂN QUÀ - ƯU ĐÃI X3</a>
+                <button class="pAs"><i class="bi bi-x-lg closehd"></i></button>
+            </div>
+        </div>
+        <div class="sticky-top" style="background-color: var(--color-white); padding: 10px 0;">
+            <div class="p6 d-flex align-items-center h100">
+                <div class="navmb col-sm-2 col-2">
+                    <input type="checkbox" id="navmb__input" class="navmb__input">
+                    <label for="navmb__input" class="overlaynavmb"></label>
+                    <label for="navmb__input" class="navmb-icon" style="font-size: 26px;">
+                        <i class="bi bi-list"></i>
+                    </label>
+                    <div class="navmbBar">
+                        <div class="navmbBar__top d-flex" style="background-color: var(--color-primary4);">
+                            <div class="navmbBar__icon"><i class="bi bi-person"></i></div>
+                            <div class="navmbBar__text ms-4">
+                                <span>Tài khoản</span><br>
+                                <span>Đăng nhập</span>
+                            </div>
+                        </div>
+                        <div class="navmbBar__mid">
+                            <ul>
+                                <li class="lv1"><a href="index.html">Trang chủ</a></li>
+                                <li class="lv1"><a href="">Sản phẩm<i class="bi bi-chevron-right"></i></a></li>
+                                <li class="lv1"><a href="">Chương trình khuyến mãi
+                                        <img src="./img/background/menu_icon_3.webp" alt="" style="max-height: 22px;">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </a></li>
+                                <li class="lv1"><a href="">Đơn hàng</a></li>
+                                <li class="lv1"><a href="">Hệ thống cửa hàng</a></li>
+                                <li class="lv1"><a href="">Giới thiệu</a></li>
+                                <li class="lv1"><a href="">Tin tức</a></li>
+                                <li class="lv1"><a href="">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="navmbbar__bottom d-flex align-items-center pAs">
+                            <a href=""><span>Gọi điện</span><i class="bi bi-telephone-fill"></i></a>
+                            <a href=""><span>Nhắn tin</span><i class="bi bi-messenger"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo h100 col-lg-2 col-sm-8 col-8 d-flex align-items-center">
+                    <a href="/">
+                        <img class="img-fluid" src="./img/background/logo.webp" alt=""
+                            style="object-fit: cover; width: 100%; height: 50px;">
+                    </a>
+                </div>
+                <div class="navpc col-lg-9 col-sm-8 col-2 navigation--horizontal align-items-center pRl">
+                    <div class="navigation-wrapper navigation-horizontal-wrapper">
+                        <ul class="navigation">
+                            <li class="lv1">
+                                <a href="index.html">Trang chủ</a>
+                            </li>
+                            <li class="lv1 hv1">
+                                <a href="product.html">Sản phẩm<i class="bi bi-chevron-down ms-4"></i></a>
+                            </li>
+                            <li class="lv1 pRl hv2">
+                                <a href="sale-off.html">
+                                    <img src="./img/background/menu_icon_3.webp" alt=""
+                                        style="height: 100%; width: 20px; object-fit: cover;">
+                                    Chương trình khuyến mãi<i class="bi bi-chevron-down ms-4"></i></a>
+
+                            </li>
+                            <li class="lv1">
+                                <a href="order.html">Đơn hàng</a>
+                            </li>
+                            <li class="lv1">
+                                <a href="chain-stores.html">Hệ thống cửa hàng</a>
+                            </li>
+                            <li class="lv1">
+                                <a href="intro.html">Giới thiệu</a>
+                            </li>
+                            <li class="lv1">
+                                <a href="blog.html">Tin tức</a>
+                            </li>
+                            <li class="lv1">
+                                <a href="contact.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" navigation-arrows ms-3 d-flex align-items-center">
+                        <i class="fas fa-chevron-left prev p-3"></i>
+                        <i class="fas fa-chevron-right next p-3"></i>
+                    </div>
+                    <div class="dropmenu pAs">
+                        <ul>
+                            <li><a href="">Landing Page - Flash Sale</a></li>
+                            <li><a href="">Landing Page - Black Friday</a></li>
+                            <li><a href="">Landing Page - Xmas</a></li>
+                            <li><a href="">Landing Page - FnB</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropmenusale pF">
+                        <div class="p6">
+                            <div class="col-lg-3">
+                                <h3 style="font-weight: 500; padding-left: 2px;">Bộ sưu tập</h3>
+                                <ul>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                    <li><a href="">Bộ sưu tập mùa hè</a></li>
+                                    <li><a href="">Bộ sưu tập mùa thu</a></li>
+                                    <li><a href="">Bộ sưu tập thu đông</a></li>
+                                    <li><a href="">Giáng sinh</a></li>
+                                    <li><a href="">Bộ sưu tập áo cưới</a></li>
+                                    <li><a href="">Bộ sưu tập outfits</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3">
+                                <h3 style="font-weight: 500; padding-left: 2px;">Mặc theo dịp</h3>
+                                <ul>
+                                    <li><a href="">Đi du lịch</a></li>
+                                    <li><a href="">Đi làm</a></li>
+                                    <li><a href="">Đi event</a></li>
+                                    <li><a href="">Đi tiệc</a></li>
+                                    <li><a href="">Đi Halloween</a></li>
+                                    <li><a href="">Lễ tình nhân</a></li>
+                                    <li><a href="">Lễ Quốc Tế Thiếu Nhi</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3">
+                                <h3 style="font-weight: 500; padding-left: 2px;">Bộ sưu tập</h3>
+                                <ul>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3">
+                                <h3 style="font-weight: 500; padding-left: 2px;">Bộ sưu tập</h3>
+                                <ul>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                    <li><a href="">Hoa cỏ mùa xuân</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-icon col-lg-1 col-sm-2 col-2 d-flex justify-content-between align-items-center">
+                    <div class="search pRl">
+                        <input type="checkbox" class="inputSearch" id="inputSearch" style="display: none;">
+                        <label for="inputSearch" class="overlaysearch"></label>
+                        <label class="iconsearch" for="inputSearch" style="font-size: 26px; cursor: pointer;">
+                            <i class="bi bi-search"></i>
+                        </label>
+                        <div class="searchbar pF d-flex align-items-center justify-content-center">
+                            <div class=" col-lg-6 col-sm-6 col-10 pRl">
+                                <div class="col-lg-12 col-sm-12 col-12">
+                                    <input type="search" class="searchbar__input pRl " id="searchbar__input"
+                                        placeholder="Tìm theo tên sản phẩm...">
+
+                                </div>
+                                <label for="searchbar__input " class="pAs searchbar__label"><i
+                                        class="bi bi-search"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user pRl">
+                        <label style="font-size: 26px; cursor: pointer;">
+                            <i class="bi bi-person"></i>
+                        </label>
+                        <div class="user__hover pAs">
+                            <span>Đăng nhập</span><br>
+                            <span>Đăng ký</span>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <label style="font-size: 26px; cursor: pointer;">
+                            <i class=" bi bi-bag pRl">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    0
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </i>
+                        </label>
+                        <div class="cart__hover pAs">
+                            <span>không có sản phẩm nào</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <div class="bread-crumb row">
+        <div class="p6" style="background-color: #f5f5f5;">
+            <ul class="breadcrumb" style="margin-bottom: 0 !important;">
+                <li class="home">
+                    <a href="/" title="Trang chủ">
+                        <span class="text" style="color: #999;">Trang chủ</span>
+                    </a>
+                </li>
+
+                <li>
+                    <span class="cblack">Giới thiệu</sapn>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="p6 " style="margin-top: 30px;
+        margin-bottom: 50px;">
+            <h1>Giới thiệu</h1>
+            <div class="content">
+                <h1>&nbsp;</h1>
+                <p>Công ty được thành lập từ năm 1960 trải qua hơn 50 năm phấn đấu và trưởng thành Công ty đã không
+                    ngừng lớn mạnh, tích lũy được nhiều kinh nghiệm trong sản xuất kinh doanh. Với đội ngũ lãnh đạo giàu
+                    kinh nghiệm, chiến lược kinh doanh tốt, đội ngũ kỹ sư được đào tạo chuyên ngành có năng lực và lực
+                    lượng công nhân giỏi tay nghề Công ty&nbsp; đã tiến bước vững chắc và phát triển liên tục để giữ
+                    vững uy tín và chất lượng xứng đáng với niềm tin yêu của người tiêu dùng.</p>
+
+                <p>Công ty chính thức hoạt động dưới hình thức Công ty cổ phần từ ngày 20/01/2004 theo Giấy chứng nhận
+                    đăng ký kinh doanh số 012348765 do Sở Kế hoạch và đầu tư thành phố Hà Nội cấp và thay đổi lần thứ
+                    bảy ngày 09/05/2018. Các hoạt động sản xuất kinh doanh chính bao gồm:</p>
+
+                <ul>
+                    <li> Kinh doanh xuất nhập khẩu: thời trang nam nữ, phụ kiện, quần áo, sản phẩm chuyên ngành, hàng
+                        hoá tiêu dùng và các sản phẩm hàng hoá khác. </li>
+                    <li>Đầu tư xây dựng, cho thuê văn phòng, nhà ở, trung tâm thương mại.</li>
+                    <li> Kinh doanh các ngành nghề khác không bị cấm theo các quy định của pháp luật.</li>
+                </ul>
+                <p>Sản phẩm của chúng tôi liên tục được người tiêu dùng mến mộ và bình chọn là “Hàng Việt nam chất lượng
+                    cao”.</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer row">
+        <div class="footer__top" style="background-color: var(--color-input); color: var(--color-white);">
+            <div class="p6">
+                <div style="margin-top: 7em ; display: flex; flex-wrap: wrap;">
+                    <div class="col-lg-3 col-sm-12 col-12">
+                        <div class="logo-ft">
+                            <img src="./img/footer/logo-footer.webp" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <span class="ms-4">Địa chỉ: 70 Lu Gia, District 11, Ho Chi Minh City.</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-phone"></i>
+                                <span class="ms-4">Số điện thoại: 19006750</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-envelope"></i>
+                                <span class="ms-4">Email: support@sapo.vn</span>
+                            </li>
+                            <li>
+                                <span>© Bản quyền thuộc về EGANY | Cung cấp bởi Sapo</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 col-12">
+                        <h3>CHÍNH SÁCH</h3>
+                        <ul>
+                            <li>
+                                <a href="">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="">Hệ thống cửa hàng</a>
+                            </li>
+                            <li>
+                                <a href="">Câu hỏi thường gặp</a>
+                            </li>
+                            <li>
+                                <a href="">Gọi điện đặt hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 col-12">
+                        <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                        <ul>
+                            <li>
+                                <a href="">Thông tin liên hệ</a>
+                            </li>
+                            <li>
+                                <a href="">Chính sách giao hàng</a>
+                            </li>
+                            <li>
+                                <a href="">Chính sách đổi hàng</a>
+                            </li>
+                            <li>
+                                <a href="">Chính sách bán hàng</a>
+                            </li>
+                        </ul>
+                        <div style="margin-top: 100px;">
+                            <img src="./img/footer/footer_trustbadge.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 col-12">
+                        <h3>ĐĂNG KÝ NHẬN TIN</h3>
+                        <p>Bạn có muốn nhận khuyến mãi đặc biệt? Đăng ký ngay.</p>
+                        <div class="inputmail pRl">
+                            <input id="inputmail" type="email" placeholder="Nhập địa chỉ Email">
+                            <label for="inputmail">Đăng ký</label>
+                        </div>
+                        <ul class="social">
+                            <li>
+                                <img src="./img/footer/facebook.webp" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/footer/zalo.webp" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/footer/instagram.webp" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/footer/youtube.webp" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/footer/tiktok.webp" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom pF">
+            <div class="backtotop" onclick="topFunction()">
+                <button>
+                    <i class="bi bi-chevron-up"></i>
+                </button>
+            </div>
+            <div class="call">
+                <button style="background-color: var(--color-primary3);">
+                    <i class="bi bi-telephone-fill"></i>
+                </button>
+            </div>
+            <div class="call">
+                <button>
+                    <img src="./img/footer/addthis-zalo.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <script src="public/js/script.js"></script>
+</body>
+
+</html>

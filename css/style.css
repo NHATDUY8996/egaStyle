@@ -1,0 +1,290 @@
+:root {
+	--color-primary: #F58A20;
+	--color-primary1: #d84144;
+	--color-primary2: #f4c4c2;
+	--color-primary3: #DF0000;
+	--color-primary4: #cd6826;
+	--color-primary5: #007bff;
+	--color-pink: #fff8f5;
+	--color-border: rgba(161,161,161,0.37);
+	--color-border1: #e5e5e5;
+	--color-white: #fff;
+    --color-white1: #f5f5f5;
+	--color-white2: #969696;
+	--color-black: #000000;
+	--color-grey: #707070;
+	--color-brown: #a87e72;
+	--color-orange: #ffc107;
+	--color-blue: #00acf4;
+	--color-red: #FF0000;
+	--color-yellow: #fabd0d;
+	--color-btn: #f58220;
+	--color-input: #2e2e2e;
+	--color-hoverbtn: #98de22;
+	--bg-pink: #fff8f5;
+	--bg-input: #dddddd;
+	--bg-boxshadow: 0 2px 5px 0 rgba(0,0,0,0.24);;
+	--bg-boxshadow2: rgba(0, 0, 0, 0.4);
+	--bg-boxshadow3: rgba(0, 0, 0, 0.8);
+	--box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* class color and bg */
+/* background */
+.bshadow {
+	box-shadow: var(--box-shadow);
+}
+.bgred{
+	background-color: var(--color-primary2);
+}
+.bgprimary{
+	background-color: var(--color-primary);
+}
+.bgprimary1{
+	background-color: var(--color-primary1);
+}
+.bgprimary3{
+	background-color: var(--color-primary3);
+}
+.bgprimary4{
+	background-color: var(--color-primary4);
+}
+.bgwhite{
+	background-color: var(--color-white);
+}
+.bgwhite1{
+	background-color: var(--color-white1);
+}
+.bgblack{
+	background-color: var(--color-black);
+}
+.bgshadow{
+	box-shadow: var(--bg-boxshadow);
+}
+.bgblue{
+	background-color: var(--color-blue);
+}
+.bgyellow{
+	background-color: var(--color-yellow);
+}
+.bgbtn{
+	background-color: var(--color-btn);
+}
+.bginput{
+	background-color: var(--bg-input);
+}
+.bgshadow1{
+	background: rgba(0,0,0,0.4);
+}
+/* background */
+/* color */
+.cred{
+	color: var(--color-red);
+}
+.cinput{
+	color: var(--bg-input);
+}
+.cprimary {
+	color: var(--color-primary);
+}
+.cprimary1 {
+	color: var(--color-primary1);
+}
+.cprimary2 {
+	color: var(--color-primary2);
+}
+.cprimary3 {
+	color: var(--color-primary3);
+}
+.cbtn{
+	color: var(--color-btn);
+}
+.cborder {
+	color: var(--color-border);
+}
+.cyellow{
+	color: var(--color-yellow);
+}
+.cwhite {
+	color: var(--color-white);
+}
+.cwhite1 {
+	color: var(--color-white1);
+}
+.cwhite2 {
+	color: var(--color-white2);
+}
+.cblack {
+	color: var(--color-black);
+}
+.cgrey{
+	color: var(--color-grey);
+}
+.cblue {
+	color: var(--color-blue);
+}
+/* color */
+
+/* class default */
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-weight: 500;
+	 line-height: 1.7;
+	 color: var(--color-black);
+	 background-color: var(--color-white);
+	 font-family: 'Mulish', sans-serif;
+                                                
+}
+.row{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #6b6b6b #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #6b6b6b;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+	height: 2px;
+  }
+.m0 {
+	margin: 0;
+}
+
+.p0 {
+	padding: 0 !important;
+}
+
+.bd{
+	border: 1px solid var(--color-border);
+}
+
+.bn{
+	border: none;
+	outline: none;
+}
+
+ul {
+	list-style: none;
+    padding-left: 0;
+}
+
+li {
+	margin: 1rem 0;
+	line-height: 1.4;
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+}
+label{
+	margin-bottom: 0;
+}
+a:active{
+	color: var(--color-black);
+}
+a:hover {
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+	color: var(--color-black);
+}
+h2{
+	font-size: 20px;
+}
+/* wh */
+.w-25{
+	width: 25%;
+}
+.w-75{
+	width: 75%;
+}
+
+.wh120px{
+	width: 120px ;
+	height: 120px;
+}
+.wh100{
+	width: 100%;
+	height: 100%;
+}
+.w100{
+	width: 100%;
+}
+.w60{
+	width: 60%;
+}
+.h100{
+	height: 100%;
+}
+.w300px{
+	width: 300px;
+}
+.w200px{
+	width: 200px;
+}
+.w100px{
+	width: 100px;
+}
+.h40px{
+	height: 40px;
+}
+.wh28 {
+	width: 28px;
+	height: 28px;
+}
+
+.h50px{
+	height: 50px;
+}
+/* wh */
+
+/* cursor */
+.cursor{
+	cursor: pointer;
+}
+.cursornot{
+	cursor: grabbing;
+}
+/* cursor */
+/* position */
+.pAs{
+	position: absolute;
+}
+.pRl{
+	position: relative;
+}
+.pF{
+	position: fixed;
+}
+/* position */
+/* radius */
+.br50rem{
+	border-radius: 50rem;
+}
+.br50{
+	border-radius: 50%;
+}
+
+/* radius */
